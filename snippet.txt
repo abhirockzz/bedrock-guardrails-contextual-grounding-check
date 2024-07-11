@@ -1,0 +1,54 @@
+Much of the early public attention has focused on GenAI applications, with the remarkable 2022 launch of ChatGPT. But, to our “primitive” way of thinking, there are three distinct layers in the GenAI stack, each of which is gigantic, and each of which we’re deeply investing. The bottom layer is for developers and companies wanting to build foundation models (“FMs”). The primary primitives are the compute required to train models and generate inferences (or predictions), and the software that makes it easier to build these models. Starting with compute, the key is the chip inside it. To date, virtually all the leading FMs have been trained on Nvidia chips, and we continue to offer the broadest
+collection of Nvidia instances of any provider. That said, supply has been scarce and cost remains an issue as
+customers scale their models and applications. Customers have asked us to push the envelope on
+price-performance for AI chips, just as we have with Graviton for generalized CPU chips. As a result, we’ve
+built custom AI training chips (named Trainium) and inference chips (named Inferentia). In 2023, we
+announced second versions of our Trainium and Inferentia chips, which are both meaningfully more
+price-performant than their first versions and other alternatives. This past fall, leading FM-maker, Anthropic,
+announced it would use Trainium and Inferentia to build, train, and deploy its future FMs. We already
+have several customers using our AI chips, including Anthropic, Airbnb, Hugging Face, Qualtrics, Ricoh,
+and Snap.
+Customers building their own FM must tackle several challenges in getting a model into production.
+Getting data organized and fine-tuned, building scalable and efficient training infrastructure, and then
+deploying models at scale in a low latency, cost-efficient manner is hard. It’s why we’ve built Amazon
+SageMaker, a managed, end-to-end service that’s been a game changer for developers in preparing their data
+for AI, managing experiments, training models faster (e.g. Perplexity AI trains models 40% faster in
+SageMaker), lowering inference latency (e.g.Workday has reduced inference latency by 80% with SageMaker),
+and improving developer productivity (e.g. NatWest reduced its time-to-value for AI from 12-18 months to
+under seven months using SageMaker).
+The middle layer is for customers seeking to leverage an existing FM, customize it with their own data, and
+leverage a leading cloud provider’s security and features to build a GenAI application—all as a managed service. Amazon Bedrock invented this layer and provides customers with the easiest way to build and scale
+GenAI applications with the broadest selection of first- and third-party FMs, as well as leading ease-of-use
+capabilities that allow GenAI builders to get higher quality model outputs more quickly. Bedrock is off to a
+very strong start with tens of thousands of active customers after just a few months. The team continues
+to iterate rapidly on Bedrock, recently delivering Guardrails (to safeguard what questions applications will
+answer), Knowledge Bases (to expand models’ knowledge base with Retrieval Augmented Generation—or
+RAG—and real-time queries), Agents (to complete multi-step tasks), and Fine-Tuning (to keep teaching
+and refining models), all of which improve customers’ application quality. We also just added new models
+from Anthropic (their newly-released Claude 3 is the best performing large language model in the world),
+Meta (with Llama 2), Mistral, Stability AI, Cohere, and our own Amazon Titan family of FMs. What
+customers have learned at this early stage of GenAI is that there’s meaningful iteration required to build a
+production GenAI application with the requisite enterprise quality at the cost and latency needed. Customers
+don’t want only one model. They want access to various models and model sizes for different types of
+applications. Customers want a service that makes this experimenting and iterating simple, and this is what
+Bedrock does, which is why customers are so excited about it. Customers using Bedrock already include ADP,
+Amdocs, Bridgewater Associates, Broadridge, Clariant, Dana-Farber Cancer Institute, Delta Air Lines,
+Druva, Genesys, Genomics England, GoDaddy, Intuit, KT, Lonely Planet, LexisNexis, Netsmart, Perplexity
+AI, Pfizer, PGA TOUR, Ricoh, Rocket Companies, and Siemens.
+The top layer of this stack is the application layer.We’re building a substantial number of GenAI applications
+across every Amazon consumer business. These range fromRufus (our new, AI-powered shopping assistant),
+to an even more intelligent and capable Alexa, to advertising capabilities (making it simple with natural
+language prompts to generate, customize, and edit high-quality images, advertising copy, and videos), to
+customer and seller service productivity apps, to dozens of others. We’re also building several apps in AWS,
+including arguably the most compelling early GenAI use case—a coding companion.We recently launched
+Amazon Q, an expert on AWS that writes, debugs, tests, and implements code, while also doing
+transformations (like moving from an old version of Java to a new one), and querying customers’ various
+data repositories (e.g. Intranets, wikis, Salesforce, Amazon S3, ServiceNow, Slack, Atlassian, etc.) to answer
+questions, summarize data, carry on coherent conversation, and take action. Q is the most capable work
+assistant available today and evolving fast.
+While we’re building a substantial number of GenAI applications ourselves, the vast majority will ultimately
+be built by other companies.However, what we’re building inAWS is not just a compelling app or foundation
+model. These AWS services, at all three layers of the stack, comprise a set of primitives that democratize this
+next seminal phase of AI, and will empower internal and external builders to transform virtually every
+customer experience that we know (and invent altogether new ones as well). We’re optimistic that much of
+this world-changing AI will be built on top of AWS.
